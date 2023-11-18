@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/lemon_glacier"
+    android:layout_marginBottom="20dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_nome_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/raisin_black"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Item Name"
+    />
+
+    <TextView
+        android:id="@+id/txt_descricao_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/purple_navy"
+        android:text="Item Description"
+    />
+
+</LinearLayout>

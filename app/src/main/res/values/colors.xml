@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="lemon_glacier">#FDFF00</color>
+    <color name="purple_navy">#505C7C</color>
+    <color name="gunmetal">#282E3C</color>
+    <color name="raisin_black">#242424</color>
+    <color name="metallic_sunburst">#988829</color>
+</resources>
+
+<!--Site para saber o nome das cores-->
+<!--https://www.color-name.com/-->

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar_todoList"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+
+        android:background="@color/gunmetal"
+        app:titleTextColor="@color/lemon_glacier"
+        app:title="@string/todolist_title"
+
+        android:layout_gravity="top|start"
+    />
+
+    <TextView
+        android:id="@+id/txt_title_todoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Lista de Afazeres"
+        android:textColor="@color/purple_navy"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_todoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="130dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_todoList"
+    />
+
+    <TextView
+        android:id="@+id/txt_no_tasks_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Nenhuma Task Foi Criada"
+        android:textColor="@color/gunmetal"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        android:layout_gravity="center"
+    />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Logout"
+        android:backgroundTint="@color/purple_navy"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="15dp"
+
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/gunmetal"
+        app:strokeWidth="5dp"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_todoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:backgroundTint="@color/purple_navy"
+        app:srcCompat="@drawable/activity_add_24"/>
+
+</FrameLayout>

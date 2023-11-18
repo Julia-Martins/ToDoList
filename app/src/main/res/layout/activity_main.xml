@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_glacier"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_welcome_title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:text="Welcome to, "
+
+        android:textColor="@color/purple_navy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_title_app"
+        />
+
+    <TextView
+        android:id="@+id/txt_title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:text="Just Do It"
+
+        android:textColor="@color/purple_navy"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_title_create"
+        />
+
+    <TextView
+        android:id="@+id/txt_title_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:text="Create your new user"
+
+        android:textColor="@color/purple_navy"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="5dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll_main_login"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_main_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:background="@drawable/main_login_design"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Digite seu Email"
+
+            android:textColor="@color/purple_navy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="15dp"
+            android:padding="16dp"
+            android:hint="E-mail"
+
+            android:inputType="textEmailAddress"
+
+            android:textColor="@color/raisin_black"
+            android:textColorHint="@color/raisin_black"
+
+            android:background="@drawable/edit_txt_design_login"
+            />
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Digite sua Senha"
+
+            android:textColor="@color/purple_navy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="16dp"
+            android:hint="Senha"
+
+            android:inputType="textPassword"
+
+            android:textColor="@color/raisin_black"
+            android:textColorHint="@color/raisin_black"
+
+            android:background="@drawable/edit_txt_design_login"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_main_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_login_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+
+                android:backgroundTint="@color/gunmetal"
+                android:paddingHorizontal="55dp"
+                android:paddingVertical="15dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/raisin_black"
+                app:strokeWidth="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_toRightOf="@id/btn_login_main"
+
+                android:backgroundTint="@color/gunmetal"
+                android:paddingHorizontal="45dp"
+                android:paddingVertical="15dp"
+                android:text="New user"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/raisin_black"
+                app:strokeWidth="5dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
